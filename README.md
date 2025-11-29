@@ -1,6 +1,27 @@
-# Qwen3-4B-FineTuning
-Le fine tuning de Qwen3 pour la generation du texte (question - reponse) en Darija, optimisé avec unsloth avec une configuration de LoRA avec un rang egal a 4.
-L'entrainement est fait avec SFTTrainer pour un fine tuning supervise.
-L'evaluation du modele avec differents metriques d'evaluation comme les metriques BERTScore, BLEU, ROUGE.
-La base de donnees d'entrainement est une base de question reponse en Darija, bien nettoye et formate pour l'utilisation direct dans le model.
-Voila le lien vers la base de donnees : https://huggingface.co/datasets/AbdelilahFdg/QA
+
+# Darija QA Chatbot
+
+Ce projet vise à finetuner le modèle **Qwen3-4B** pour la génération de texte en **Darija (arabe marocain)** dans une tâche de **Question–Réponse (QA)**.  
+Le fine-tuning est optimisé avec **Unsloth**, utilisant **LoRA (rank = 4)** et un entraînement supervisé via **SFTTrainer**.  
+Le modèle est évalué avec plusieurs métriques de NLP (BERTScore, BLEU, ROUGE), et déployé sous forme de **chatbot interactif**.
+
+## Fonctionnalités principales
+
+- **Prétraitement complet** du corpus QA Darija :
+  - Tokenisation  
+  - Nettoyage du texte (caractères spéciaux, tags, doublons)
+- **Fine-tuning LoRA** sur Qwen3-4B avec :
+  - LoRA rank = 4  
+  - Optimisation mémoire grâce à **Unsloth**
+  - Entraînement supervisé avec **SFTTrainer**
+- **Évaluation du modèle** :
+  - **BERTScore**
+  - **BLEU**
+  - **ROUGE**
+- **Chatbot Darija** :
+  - Génération cohérente basée sur un corpus QA réel
+  - Interface web simple et réactive
+- Dataset utilisé :  
+  👉 https://huggingface.co/datasets/AbdelilahFdg/QA
+
+
